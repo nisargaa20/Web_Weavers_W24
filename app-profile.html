@@ -1,0 +1,687 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Study Sphere </title>
+ 
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    	<link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+  
+    <div id="main-wrapper">
+
+      
+        <div class="nav-header">
+            <a href="index.html" class="brand-logo">
+                <img class="logo-abbr" src="images/logo2.png" alt="">
+                <img class="logo-compact" src="images/study.jpg" alt="">
+                <img class="brand-title" src="images/study.jpg" alt="">
+            </a>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+       
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+                            <div class="search_bar dropdown">
+                                <span class="search_icon p-3 c-pointer" data-toggle="dropdown">
+                                    <i class="mdi mdi-magnify"></i>
+                                </span>
+                                <div class="dropdown-menu p-0 m-0">
+                                    <form>
+                                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="navbar-nav header-right">
+                            <li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link bell ai-icon" href="#" role="button" data-toggle="dropdown">
+                                    <svg id="icon-user" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
+										<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+										<path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+									</svg>
+                                    <div class="pulse-css"></div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <ul class="list-unstyled">
+                                        <li class="media dropdown-item">
+                                            <span class="success"><i class="ti-user"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>z</strong> has added a <strong>course</strong> Successfully
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="primary"><i class="ti-shopping-cart"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>priya</strong> purchased completed course.</p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="danger"><i class="ti-bookmark"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>Robin</strong> joined<strong>class</strong> 
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="primary"><i class="ti-heart"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>David</strong>created a schedule</p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="success"><i class="ti-image"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong> sneha</strong> has<strong>new class</strong> 
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                    </ul>
+                                    <a class="all-notification" href="#">See all notifications <i class="ti-arrow-right"></i></a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown header-profile">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                    <img src="images/profile/education/pic1.jpg" width="20" alt="">
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="app-profile.html" class="dropdown-item ai-icon">
+                                        <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                        <span class="ml-2">Profile </span>
+                                    </a>
+                                    
+                                    <a href="page-login.html" class="dropdown-item ai-icon">
+                                        <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                                        <span class="ml-2">Logout </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="dlabnav">
+            <div class="dlabnav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label first">Main Menu</li>
+                    <li><a class="has-arrow" href="index.html" aria-expanded="false">
+							<i class="la la-home"></i>
+							<span class="nav-text">Dashboard</span>
+						</a>
+                        
+                    </li>
+                    <li><a class="ai-icon" href="app-profile.html" aria-expanded="false">
+                        <i class="la la-user"></i>
+                        <span class="nav-text">Profile</span>
+                    </a>
+                    <li><a class="ai-icon" href="page-register.html" aria-expanded="false">
+                        <i class="la la-th-list"></i>
+                        <span class="nav-text">Register</span>
+                    </a>
+                </li>
+                <li><a class="ai-icon" href="page-login.html" aria-expanded="false">
+                    <i class="la la-th-list"></i>
+                    <span class="nav-text">Log in</span>
+                </a>
+					<li><a class="ai-icon" href="event-management.html" aria-expanded="false">
+							<i class="la la-calendar"></i>
+							<span class="nav-text">Event Management</span>
+						</a>
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-user"></i>
+							<span class="nav-text">Professors</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="all-professors.html">All Professor</a></li>
+                            <li><a href="add-professor.html">Add Professor</a></li>
+                           
+                            <li><a href="professor-profile.html">Professor Profile</a></li>
+                        </ul>
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-users"></i>
+							<span class="nav-text">Students</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="all-students.html">All Students</a></li>
+                            <li><a href="add-student.html">Add Students</a></li>
+                       
+                            <li><a href="about-student.html">About Students</a></li>
+                        </ul>
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-graduation-cap"></i>
+							<span class="nav-text">Courses</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="all-courses.html">All Courses</a></li>
+                            <li><a href="add-courses.html">Add Courses</a></li>
+                           
+                            <li><a href="about-courses.html">About Courses</a></li>
+                        </ul>
+                    </li>
+					
+				
+							
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-laptop"></i>
+							<span class="nav-text">Virtual class</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="http://localhost:8080">chat</a></li>
+                            <li><a href="http://127.0.0.1:8082/06bd01fa-0a61-4a72-b816-32db59474a69">video streaming</a></li>
+                           
+                           
+                            <li><a href="holiday-calendar.html">Schedule</a></li>
+                        </ul>
+                    </li>
+					
+							
+							
+						</a>
+                        <ul aria-expanded="false">
+                           
+                        </ul>
+                    </li>			
+                    <li>
+                        <a class="has-arrow" href="form-element.html" aria-expanded="false">
+                            <i class="la la-file-text"></i>
+                            <span class="nav-text">Assessment</span>
+                        </a>
+
+                        <ul aria-expanded="false">
+                            <li><a href="form-element.html">Quiz</a></li>
+                        </ul>
+                        <ul aria-expanded="false">
+                            <li><a href="add-assessment.html">Add Assessment</a></li>
+                        </ul>
+                    </li>
+                    
+                </li>
+        </li>  <li><a class="has-arrow" href="https://adamowskya.my.canva.site/motivational-travel-instagram-reels-video" aria-expanded="false">
+            <i class="
+            la la-film"></i>
+            <span class="nav-text">ReelSpectra</span>
+        </a>
+        <li><a class="ai-icon" href="assignment.html" aria-expanded="false">
+            <i class="la la-edit"></i>
+            <span class="nav-text">Assignment</span>
+        </a>
+       
+                            
+                        </ul>
+                    </li>
+				</ul>
+            </div>
+        </div>
+      
+        <div class="content-body">
+            <div class="container-fluid">
+                <div class="row page-titles mx-0">
+                    <div class="col-sm-6 p-md-0">
+                        <div class="welcome-text">
+                            <div class="welcome-text">
+                                <div class="welcome-text">
+                                    <div class="welcome-text">
+                                        <script>
+                                           
+                                            function getQueryParams() {
+                                                const params = new URLSearchParams(window.location.search);
+                                                return {
+                                                    username: params.get('username'),
+                                                    email: params.get('email')
+                                                };
+                                            }
+        
+                                            
+                                            function updateProfile() {
+                                                const queryParams = getQueryParams();
+                                                const welcomeText = document.querySelector('.welcome-text');
+        
+                                                const storedUsername = localStorage.getItem('username');
+                                                const storedEmail = localStorage.getItem('email');
+        
+                                                if (queryParams.username && queryParams.email) {
+                                                   
+                                                    welcomeText.innerHTML = `
+                                                        <h4>Hi,  ${queryParams.username}!</h4>
+                                                        <p></p>
+                                                        <p> ${queryParams.email}</p>
+                                                        <!-- Add other user details here -->
+                                                    `;
+        
+                                                
+                                                    localStorage.setItem('username', queryParams.username);
+                                                    localStorage.setItem('email', queryParams.email);
+                                                } else if (storedUsername && storedEmail) {
+                                                  
+                                                    welcomeText.innerHTML = `
+                                                        <h4>Hi,  ${storedUsername}!</h4>
+                                                        <p></p>
+                                                        <p> ${storedEmail}</p>
+                                                        <!-- Add other user details here -->
+                                                    `;
+                                                } else {
+                                                   
+                                                    welcomeText.innerHTML = '<p>User not found</p>';
+                                                }
+                                            }
+        
+                                            window.onload = updateProfile;
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+        
+                    <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">App</a></li>
+                            <li class="breadcrumb-item active"><a href="javascript:void(0)">Profile</a></li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- row -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="profile">
+                            <div class="profile-head">
+                                <div class="photo-content">
+                                    <div class="cover-photo"></div>
+                                    
+                                </div>
+                                <div class="profile-info">
+									
+                                    <div class="row">
+										<div class="col-sm-3">
+											<div class="profile-photo">
+												<img src="images/profile/profile.png" class="img-fluid rounded-circle" alt="">
+											</div>
+										</div>
+                                        <div class="col-sm-9 col-12">
+                                            <div class="row">
+                                                <div class="col-xl-4 col-sm-6 border-right-1">
+                                                    <div class="profile-name">
+                                                        <h4 class="text-primary mb-0"></h4>
+                                                        <p></p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-sm-6 border-right-1">
+                                                    <div class="profile-email">
+                                                        <h4 class="text-muted mb-0"></h4>
+                                                        <p></p>
+                                                    </div>
+                                                </div>
+                                             
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="profile-statistics">
+                                    <div class="text-center mt-4 border-bottom-1 pb-3">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h3 class="m-b-0">150</h3><span>Follower</span>
+                                            </div>
+                                            <div class="col">
+                                                <h3 class="m-b-0">140</h3><span>Following</span>
+                                            </div>
+                                            <div class="col">
+                                                <h3 class="m-b-0">45</h3><span>Reviews</span>
+                                            </div>
+                                        </div>
+                                        <div class="mt-4">
+											<a href="javascript:void()" class="btn btn-primary px-5 mr-3 mb-4">Follow</a> 
+											<a href="javascript:void()" class="btn btn-dark px-3 mb-4">Send Message</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile-blog pt-3 border-bottom-1 pb-1">
+                                    <h5 class="text-primary d-inline">Today Highlights</h5><a href="javascript:void()" class="pull-right f-s-16">More</a>
+                                    <img src="images/profile/1.jpg" alt="" class="img-fluid mt-4 mb-4 w-100">
+                                    <h4>🚀 Launching into the Future:</h4>
+                                    <p>As I stand on the brink of graduation, I'm filled with excitement and gratitude. PES College of Engineering has prepared me for the next chapter, and I'm ready to soar into the future.</p>
+                                </div>
+                                <div class="profile-interest mt-4 pb-2 border-bottom-1">
+                                    <h5 class="text-primary d-inline">Interest</h5>
+                                    <div class="row mt-4">
+                                        <div class="col-lg-4 col-xl-4 col-sm-4 col-6 int-col">
+                                            <a href="javascript:void()" class="interest-cat">
+                                                <img src="images/profile/2.jpg" alt="" class="img-fluid">
+                                                <p>Shopping Mall</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4 col-xl-4 col-sm-4 col-6 int-col">
+                                            <a href="javascript:void()" class="interest-cat">
+                                                <img src="images/profile/3.jpg" alt="" class="img-fluid">
+                                                <p>Photography</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4 col-xl-4 col-sm-4 col-6 int-col">
+                                            <a href="javascript:void()" class="interest-cat">
+                                                <img src="images/profile/4.jpg" alt="" class="img-fluid">
+                                                <p>Art &amp; Gallery</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4 col-xl-4 col-sm-4 col-6 int-col">
+                                            <a href="javascript:void()" class="interest-cat">
+                                                <img src="images/profile/2.jpg" alt="" class="img-fluid">
+                                                <p>Visiting Place</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4 col-xl-4 col-sm-4 col-6 int-col">
+                                            <a href="javascript:void()" class="interest-cat">
+                                                <img src="images/profile/3.jpg" alt="" class="img-fluid">
+                                                <p>Shopping</p>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4 col-xl-4 col-sm-4 col-6 int-col">
+                                            <a href="javascript:void()" class="interest-cat">
+                                                <img src="images/profile/4.jpg" alt="" class="img-fluid">
+                                                <p>Biking</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile-news mt-4 pb-3">
+                                    <h5 class="text-primary d-inline">Our Latest News</h5>
+                                    <div class="media pt-3 pb-3">
+                                        <img src="images/profile/5.jpg" alt="image" class="mr-3">
+                                        <div class="media-body">
+                                            <h5 class="m-b-5">Aarav Sharma</h5>
+                                            <p>Won the national coding competition, showcasing exceptional programming skills and problem-solving abilities.</p>
+                                        </div>
+                                    </div>
+                                    <div class="media pt-3 pb-3">
+                                        <img src="images/profile/6.jpg" alt="image" class="mr-3">
+                                        <div class="media-body">
+                                            <h5 class="m-b-5">Vikram Joshi</h5>
+                                            <p> Published research on sustainable agricultural practices, earning acclaim for contributing to eco-friendly farming solutions</p>
+                                        </div>
+                                    </div>
+                                    <div class="media pt-3 pb-3">
+                                        <img src="images/profile/7.jpg" alt="image" class="mr-3">
+                                        <div class="media-body">
+                                            <h5 class="m-b-5">Neha Gupta</h5>
+                                            <p>Founded a tech start-up that focuses on developing apps for rural education, aiming to bridge the digital divide in India.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="profile-tab">
+                                    <div class="custom-tab-1">
+                                        <ul class="nav nav-tabs">
+                                            <li class="nav-item"><a href="#my-posts" data-toggle="tab" class="nav-link active show">Posts</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#about-me" data-toggle="tab" class="nav-link">About Me</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#profile-settings" data-toggle="tab" class="nav-link">Setting</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div id="my-posts" class="tab-pane fade active show">
+                                                <div class="my-post-content pt-3">
+                                                    <div class="post-input">
+                                                        <textarea name="textarea" id="textarea" cols="30" rows="5" class="form-control bg-transparent" placeholder="Please type what you want...."></textarea> <a href="javascript:void()"><i class="ti-clip"></i> </a>
+                                                        <a href="javascript:void()"><i class="ti-camera"></i> </a><a href="javascript:void()" class="btn btn-primary">Post</a>
+                                                    </div>
+                                                    <div class="profile-uoloaded-post border-bottom-1 pb-5">
+                                                        <img src="images/profile/8.jpg" alt="" class="img-fluid">
+                                                        <a class="post-title" href="javascript:void()">
+                                                            <h4>🎓 Memories to Last a Lifetime:</h4>
+                                                        </a>
+                                                        <p>Cheers to the memories we've made - the victories, the challenges, and everything in between. Each moment has played a part in shaping who I am today..</p>
+                                                        <button class="btn btn-primary mr-3"><span class="mr-3"><i class="fa fa-heart"></i></span>Like</button>
+                                                        <button class="btn btn-secondary"><span class="mr-3"><i class="fa fa-reply"></i></span>Reply</button>
+                                                    </div>
+                                                    <div class="profile-uoloaded-post border-bottom-1 pb-5">
+                                                        <img src="images/profile/9.jpg" alt="" class="img-fluid">
+                                                        <a class="post-title" href="javascript:void()">
+                                                            <h4>🤝 Community that Cares</h4>
+                                                        </a>
+                                                        <p>To the amazing friends, mentors, and everyone who has been a part of this journey, thank you for the support, laughter, and shared moments. PESCE's community is truly one-of-a-kind.</p>
+                                                        <button class="btn btn-primary mr-3"><span class="mr-3"><i class="fa fa-heart"></i></span>Like</button>
+                                                        <button class="btn btn-secondary"><span class="mr-3"><i class="fa fa-reply"></i></span>Reply</button>
+                                                    </div>
+                                                    <div class="profile-uoloaded-post pb-5">
+                                                        <img src="images/profile/8.jpg" alt="" class="img-fluid">
+                                                        <a class="post-title" href="javascript:void()">
+                                                            <h4>📚 Lessons Beyond Books:</h4>
+                                                        </a>
+                                                        <p>From late-night study sessions to hands-on projects, PESCE has taught me lessons that go beyond textbooks. Grateful for the knowledge, skills, and friendships that have shaped my college experience.</p>
+                                                        <button class="btn btn-primary mr-3"><span class="mr-3"><i class="fa fa-heart"></i></span>Like</button>
+                                                        <button class="btn btn-secondary"><span class="mr-3"><i class="fa fa-reply"></i></span>Reply</button>
+                                                    </div>
+                                                    <div class="text-center mb-2"><a href="javascript:void()" class="btn btn-primary">Load More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="about-me" class="tab-pane fade">
+                                                <div class="profile-about-me">
+                                                    <div class="pt-4 border-bottom-1 pb-4">
+                                                        <h4 class="text-primary">About Me</h4>
+                                                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence was created for the
+                                                            bliss of souls like mine.I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.</p>
+                                                        <p>A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed
+                                                            in a nice, gilded frame.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-skills pt-2 border-bottom-1 pb-2">
+                                                    <h4 class="text-primary mb-4">Skills</h4>
+                                                    <a href="javascript:void()" class="btn btn-outline-dark btn-rounded px-4 my-3 my-sm-0 mr-2 mb-1 m-b-10">Admin</a>
+                                                    <a href="javascript:void()" class="btn btn-outline-dark btn-rounded px-4 my-3 my-sm-0 mr-2 mb-1 m-b-10">Dashboard</a>
+                                                    <a href="javascript:void()" class="btn btn-outline-dark btn-rounded px-4 my-3 my-sm-0 mr-2 mb-1 m-b-10">Photoshop</a>
+                                                    <a href="javascript:void()" class="btn btn-outline-dark btn-rounded px-4 my-3 my-sm-0 mr-2 mb-1 m-b-10">Bootstrap</a>
+                                                    <a href="javascript:void()" class="btn btn-outline-dark btn-rounded px-4 my-3 my-sm-0 mr-2 mb-1 m-b-10">Responsive</a>
+                                                    <a href="javascript:void()" class="btn btn-outline-dark btn-rounded px-4 my-3 my-sm-0 mr-2 mb-1 m-b-10">Crypto</a>
+                                                </div>
+                                                <div class="profile-lang pt-5 border-bottom-1 pb-5">
+                                                    <h4 class="text-primary mb-4">Language</h4><a href="javascript:void()" class="text-muted pr-3 f-s-16"><i class="flag-icon flag-icon-us"></i> English</a> <a href="javascript:void()" class="text-muted pr-3 f-s-16"><i class="flag-icon flag-icon-fr"></i> French</a>
+                                                    <a href="javascript:void()" class="text-muted pr-3 f-s-16"><i class="flag-icon flag-icon-bd"></i> Bangla</a>
+                                                </div>
+                                                <div class="profile-personal-info">
+                                                    <h4 class="text-primary mb-4">Personal Information</h4>
+                                                    <div class="row mb-4">
+                                                        <div class="col-3">
+                                                            <h5 class="f-w-500">Name <span class="pull-right">:</span>
+                                                            </h5>
+                                                        </div>
+                                                        <div class="col-9"><span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-4">
+                                                        <div class="col-3">
+                                                            <h5 class="f-w-500">Email <span class="pull-right">:</span>
+                                                            </h5>
+                                                        </div>
+                                                        <div class="col-9"><span>example@examplel.com</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-4">
+                                                        <div class="col-3">
+                                                            <h5 class="f-w-500">Availability <span class="pull-right">:</span></h5>
+                                                        </div>
+                                                        <div class="col-9"><span>Full Time (Free Lancer)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-4">
+                                                        <div class="col-3">
+                                                            <h5 class="f-w-500">Age <span class="pull-right">:</span>
+                                                            </h5>
+                                                        </div>
+                                                        <div class="col-9"><span>27</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-4">
+                                                        <div class="col-3">
+                                                            <h5 class="f-w-500">Location <span class="pull-right">:</span></h5>
+                                                        </div>
+                                                        <div class="col-9"><span>Rosemont Avenue Melbourne,
+                                                                Florida</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-4">
+                                                        <div class="col-3">
+                                                            <h5 class="f-w-500">Year Experience <span class="pull-right">:</span></h5>
+                                                        </div>
+                                                        <div class="col-9"><span>07 Year Experiences</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="profile-settings" class="tab-pane fade">
+                                                <div class="pt-3">
+                                                    <div class="settings-form">
+                                                        <h4 class="text-primary">Account Setting</h4>
+                                                        <form>
+                                                            <div class="form-row">
+                                                                <div class="form-group col-md-6">
+                                                                    <label>Email</label>
+                                                                    <input type="email" placeholder="Email" class="form-control">
+                                                                </div>
+                                                                <div class="form-group col-md-6">
+                                                                    <label>Password</label>
+                                                                    <input type="password" placeholder="Password" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Address</label>
+                                                                <input type="text" placeholder="1234 Main St" class="form-control">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label>Address 2</label>
+                                                                <input type="text" placeholder="Apartment, studio, or floor" class="form-control">
+                                                            </div>
+                                                            <div class="form-row">
+                                                                <div class="form-group col-md-6">
+                                                                    <label>City</label>
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                                <div class="form-group col-md-4">
+                                                                    <label>State</label>
+                                                                    <select class="form-control" id="inputState">
+                                                                        <option selected="">Choose...</option>
+                                                                        <option>Option 1</option>
+                                                                        <option>Option 2</option>
+                                                                        <option>Option 3</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-group col-md-2">
+                                                                    <label>Zip</label>
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="custom-control custom-checkbox">
+																	<input type="checkbox" class="custom-control-input" id="gridCheck">
+																	<label class="custom-control-label" for="gridCheck"> Check me out</label>
+																</div>
+                                                            </div>
+                                                            <button class="btn btn-primary" type="submit">Sign
+                                                                in</button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+
+
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright ©  Developed by <a href="../index.htm" target="_blank">Web Weavers</a> 2024</p>
+            </div>
+        </div>
+        
+
+    
+
+        
+    </div>
+ 
+    <script src="vendor/global/global.min.js"></script>
+	<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script src="js/dlabnav-init.js"></script>
+    
+
+    <script src="vendor/svganimation/vivus.min.js"></script>
+    <script src="vendor/svganimation/svg.animation.js"></script>
+    <script src="js/styleSwitcher.js"></script>
+
+
+    
+
+	
+		
+</body>
+
+</html>

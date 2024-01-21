@@ -1,0 +1,534 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Study Sphere</title>
+  
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <link rel="stylesheet" href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	
+
+</head>
+
+<body>
+
+   
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+  
+    <div id="main-wrapper">
+
+       
+        <div class="nav-header">
+            <a href="index.html" class="brand-logo">
+                <img class="logo-abbr" src="images/logo2.png" alt="">
+                <img class="logo-compact" src="images/study.jpg" alt="">
+                <img class="brand-title" src="images/study.jpg" alt="">
+            </a>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+       
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+                            <div class="search_bar dropdown">
+                                <span class="search_icon p-3 c-pointer" data-toggle="dropdown">
+                                    <i class="mdi mdi-magnify"></i>
+                                </span>
+                                <div class="dropdown-menu p-0 m-0">
+                                    <form>
+                                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="navbar-nav header-right">
+                            <li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link bell ai-icon" href="#" role="button" data-toggle="dropdown">
+                                    <svg id="icon-user" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
+										<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+										<path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+									</svg>
+                                    <div class="pulse-css"></div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <ul class="list-unstyled">
+                                        <li class="media dropdown-item">
+                                            <span class="success"><i class="ti-user"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>z</strong> has added a <strong>course</strong> Successfully
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="primary"><i class="ti-shopping-cart"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>priya</strong> purchased completed course.</p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="danger"><i class="ti-bookmark"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>Robin</strong> joined<strong>class</strong> 
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="primary"><i class="ti-heart"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>David</strong>created a schedule</p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="success"><i class="ti-image"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong> sneha</strong> has<strong>new class</strong> 
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                    </ul>
+                                    <a class="all-notification" href="#">See all notifications <i class="ti-arrow-right"></i></a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown header-profile">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                    <img src="images/profile/education/pic1.jpg" width="20" alt="">
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="app-profile.html" class="dropdown-item ai-icon">
+                                        <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                        <span class="ml-2">Profile </span>
+                                    </a>
+                                    
+                                    <a href="page-login.html" class="dropdown-item ai-icon">
+                                        <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                                        <span class="ml-2">Logout </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+       
+        <div class="dlabnav">
+            <div class="dlabnav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label first">Main Menu</li>
+                    <li><a class="has-arrow" href="index.html" aria-expanded="false">
+							<i class="la la-home"></i>
+							<span class="nav-text">Dashboard</span>
+						</a>
+                        
+                    </li>
+                    <li><a class="ai-icon" href="app-profile.html" aria-expanded="false">
+                        <i class="la la-user"></i>
+                        <span class="nav-text">Profile</span>
+                    </a>
+                    <li><a class="ai-icon" href="page-register.html" aria-expanded="false">
+                        <i class="la la-th-list"></i>
+                        <span class="nav-text">Register</span>
+                    </a>
+                </li>
+                <li><a class="ai-icon" href="page-login.html" aria-expanded="false">
+                    <i class="la la-th-list"></i>
+                    <span class="nav-text">Log in</span>
+                </a>
+					<li><a class="ai-icon" href="event-management.html" aria-expanded="false">
+							<i class="la la-calendar"></i>
+							<span class="nav-text">Event Management</span>
+						</a>
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-user"></i>
+							<span class="nav-text">Professors</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="all-professors.html">All Professor</a></li>
+                            <li><a href="add-professor.html">Add Professor</a></li>
+                           
+                            <li><a href="professor-profile.html">Professor Profile</a></li>
+                        </ul>
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-users"></i>
+							<span class="nav-text">Students</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="all-students.html">All Students</a></li>
+                            <li><a href="add-student.html">Add Students</a></li>
+                       
+                            <li><a href="about-student.html">About Students</a></li>
+                        </ul>
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-graduation-cap"></i>
+							<span class="nav-text">Courses</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="all-courses.html">All Courses</a></li>
+                            <li><a href="add-courses.html">Add Courses</a></li>
+                           
+                            <li><a href="about-courses.html">About Courses</a></li>
+                        </ul>
+                    </li>
+					
+				
+							
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-laptop"></i>
+							<span class="nav-text">Virtual class</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="http://localhost:8080">chat</a></li>
+                            <li><a href="http://127.0.0.1:8082/06bd01fa-0a61-4a72-b816-32db59474a69">video streaming</a></li>
+                           
+                            <li><a href="holiday-calendar.html">Schedule</a></li>
+                        </ul>
+                    </li>
+					
+							
+							
+						</a>
+                        <ul aria-expanded="false">
+                           
+                        </ul>
+                    </li>			
+                    <li>
+                        <a class="has-arrow" href="form-element.html" aria-expanded="false">
+                            <i class="la la-file-text"></i>
+                            <span class="nav-text">Assessment</span>
+                        </a>
+
+                        <ul aria-expanded="false">
+                            <li><a href="form-element.html">Quiz</a></li>
+                        </ul>
+                        <ul aria-expanded="false">
+                            <li><a href="add-assessment.html">Add Assessment</a></li>
+                        </ul>
+                    </li>
+                    
+                </li>
+        </li>  <li><a class="has-arrow" href="https://adamowskya.my.canva.site/motivational-travel-instagram-reels-video" aria-expanded="false">
+            <i class="
+            la la-film"></i>
+            <span class="nav-text">ReelSpectra</span>
+        </a>
+        <li><a class="ai-icon" href="assignment.html" aria-expanded="false">
+            <i class="la la-edit"></i>
+            <span class="nav-text">Assignment</span>
+        </a>
+        	
+                 
+                    
+                  
+               
+                            
+                        </ul>
+                    </li>
+				</ul>
+            </div>
+        </div>
+       
+        <div class="content-body">
+            
+            <div class="container-fluid">
+				    
+                <div class="row page-titles mx-0">
+                    <div class="col-sm-6 p-md-0">
+                        <div class="welcome-text">
+                            <h4>About Student</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active"><a href="javascript:void(0);">Students</a></li>
+                            <li class="breadcrumb-item active"><a href="javascript:void(0);">About Student</a></li>
+                        </ol>
+                    </div>
+                </div>
+				
+				<div class="row">
+					<div class="col-xl-3 col-xxl-4 col-lg-4">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="card">
+									<div class="text-center p-3 overlay-box" style="background-image: url(images/big/img1.jpg);">
+										<div class="profile-photo">
+											<img src="images/profile/profile.png" width="100" class="img-fluid rounded-circle" alt="">
+										</div>
+										<h3 class="mt-3 mb-1 text-white">Priya</h3>
+									</div>
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item d-flex justify-content-between"><span class="mb-0">Followers</span> <strong class="text-muted">1204	</strong></li>
+										<li class="list-group-item d-flex justify-content-between"><span class="mb-0">Following</span> <strong class="text-muted">2540	</strong></li>
+										<li class="list-group-item d-flex justify-content-between"><span class="mb-0">Friends</span> <strong class="text-muted">2540</strong></li>
+									</ul>
+									<div class="card-footer text-center border-0 mt-0">								
+										<a href="javascript:void(0);" class="btn btn-primary btn-rounded px-4">Follow</a>
+										<a href="javascript:void(0);" class="btn btn-warning btn-rounded px-4">Message</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="card">
+									<div class="card-header">
+										<h2 class="card-title">about me</h2>
+									</div>
+									<div class="card-body pb-0">
+										<p>Hello! I'm Priya, a passionate and dedicated third-year student pursuing Information Science and Engineering (ISE) at PES College of Engineering, Mandya. Engineering, to me, is not just a field of study; it's a journey of exploration, innovation, and continuous learning.</p>
+										<ul class="list-group list-group-flush">
+											<li class="list-group-item d-flex px-0 justify-content-between">
+												<strong>Gender</strong>
+												<span class="mb-0">Female</span>
+											</li>
+											<li class="list-group-item d-flex px-0 justify-content-between">
+												<strong>Education</strong>
+												<span class="mb-0">BE</span>
+											</li>
+											<li class="list-group-item d-flex px-0 justify-content-between">
+												<strong>Email</strong>
+												<span class="mb-0">info@example.com</span>
+											</li>
+											<li class="list-group-item d-flex px-0 justify-content-between">
+												<strong>Phone</strong>
+												<span class="mb-0">8739833434</span>
+											</li>
+										</ul>
+									</div>
+									<div class="card-footer pt-0 pb-0 text-center">
+										<div class="row">
+											<div class="col-4 pt-3 pb-3 border-right">
+												<h3 class="mb-1 text-primary">50</h3>
+												<span>Projects</span>
+											</div>
+											<div class="col-4 pt-3 pb-3 border-right">
+												<h3 class="mb-1 text-primary">140</h3>
+												<span>Uploads</span>
+											</div>
+											<div class="col-4 pt-3 pb-3">
+												<h3 class="mb-1 text-primary">45</h3>
+												<span>Tasks</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="card">
+									<div class="card-header d-block">
+										<h4 class="card-title">Address </h4>
+									</div>
+									<div class="card-body">
+										<p class="mb-0">Demo Address #8901 Mandya</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="card">
+									<div class="card-header d-block">
+										<h4 class="card-title">Interest </h4>
+									</div>
+									<div class="card-body">
+										<h6>Frontend Development
+											<span class="pull-right">85%</span>
+										</h6>
+										<div class="progress ">
+											<div class="progress-bar bg-danger progress-animated" style="width: 85%; height:6px;" role="progressbar">
+												<span class="sr-only">60% Complete</span>
+											</div>
+										</div>
+										<h6 class="mt-4">Data structure and algorithms
+											<span class="pull-right">90%</span>
+										</h6>
+										<div class="progress">
+											<div class="progress-bar bg-info progress-animated" style="width: 90%; height:6px;" role="progressbar">
+												<span class="sr-only">60% Complete</span>
+											</div>
+										</div>
+										<h6 class="mt-4">AI and ML
+											<span class="pull-right">65%</span>
+										</h6>
+										<div class="progress">
+											<div class="progress-bar bg-success progress-animated" style="width: 65%; height:6px;" role="progressbar">
+												<span class="sr-only">60% Complete</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-9 col-xxl-8 col-lg-8">
+						<div class="card">
+                            <div class="card-body">
+                                <div class="profile-tab">
+                                    <div class="custom-tab-1">
+                                        <ul class="nav nav-tabs">
+                                            <li class="nav-item"><a href="#about-me" data-toggle="tab" class="nav-link active show">About Me</a></li>
+                                            <li class="nav-item"><a href="#my-posts" data-toggle="tab" class="nav-link">Posts</a></li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div id="about-me" class="tab-pane fade active show">
+                                                <div class="profile-personal-info pt-4">
+                                                    <h4 class="text-primary mb-4">Personal Information</h4>
+                                                    <div class="row mb-4">
+                                                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                                                            <h5 class="f-w-500">Name <span class="pull-right">:</span>
+                                                            </h5>
+                                                        </div>
+                                                        <div class="col-lg-9 col-md-8 col-sm-6 col-6"><span>Priya</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-4">
+                                                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                                                            <h5 class="f-w-500">Email <span class="pull-right">:</span>
+                                                            </h5>
+                                                        </div>
+                                                        <div class="col-lg-9 col-md-8 col-sm-6 col-6"><span>info@example.com</span>
+                                                        </div>
+                                                    </div>
+													<div class="row mb-4">
+                                                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                                                            <h5 class="f-w-500">Age <span class="pull-right">:</span>
+                                                            </h5>
+                                                        </div>
+                                                        <div class="col-lg-9 col-md-8 col-sm-6 col-6"><span>20</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-4">
+                                                        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                                                            <h5 class="f-w-500">Location <span class="pull-right">:</span></h5>
+                                                        </div>
+                                                        <div class="col-lg-9 col-md-8 col-sm-6 col-6"><span>Maddur, Mandya</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+												<div class="profile-skills pt-2 border-bottom-1 pb-2">
+                                                    <h4 class="text-primary mb-4">Skills</h4>
+                                                    <a href="javascript:void()" class="btn btn-outline-dark btn-rounded px-4 my-3 my-sm-0 mr-3 m-b-10">Figma</a>
+                                                    <a href="javascript:void()" class="btn btn-outline-dark btn-rounded px-4 my-3 my-sm-0 mr-3 m-b-10">SQL</a>
+                                                    <a href="javascript:void()" class="btn btn-outline-dark btn-rounded px-4 my-3 my-sm-0 mr-3 m-b-10">UI/UX Desgining</a>
+                                                    <a href="javascript:void()" class="btn btn-outline-dark btn-rounded px-4 my-3 my-sm-0 mr-3 m-b-10">Bootstrap</a>
+                                                    <a href="javascript:void()" class="btn btn-outline-dark btn-rounded px-4 my-3 my-sm-0 mr-3 m-b-10">Web</a>
+                                                    <a href="javascript:void()" class="btn btn-outline-dark btn-rounded px-4 my-3 my-sm-0 mr-3 m-b-10">Blockchain</a>
+                                                </div>
+                                                <div class="profile-lang pt-5 border-bottom-1 pb-5">
+                                                    <h4 
+												<div class="profile-about-me">
+                                                    <div class="border-bottom-1 pb-4">
+                                                        <p>As an ISE student, I am immersed in the world of technology, where I have the opportunity to delve into various aspects of information systems, programming, and problem-solving. The dynamic curriculum at PES College not only equips me with theoretical knowledge but also provides hands-on experiences through projects and practical applications.
+
+                                                            My academic journey has been marked by a keen interest in understanding and applying cutting-edge technologies. From delving into programming languages like Java, Python, and C++ to exploring databases and software engineering principles, I find joy in unraveling the complexities of the digital world.
+                                                            
+                                                            Being part of PES College's vibrant community has allowed me to engage in various extracurricular activities and collaborative projects. I actively participate in coding competitions, hackathons, and tech symposiums, enhancing my problem-solving skills and staying updated with the latest industry trends.
+                                                    </div>
+                                                </div>
+                                            </div>
+											<div id="my-posts" class="tab-pane fade">
+                                                <div class="my-post-content pt-3">
+                                                    <div class="post-input">
+                                                        <textarea name="textarea" id="textarea" cols="30" rows="5" class="form-control bg-transparent" placeholder="Please type what you want...."></textarea> <a href="javascript:void()"><i class="ti-clip"></i> </a>
+                                                        <a href="javascript:void()"><i class="ti-camera"></i> </a><a href="javascript:void()" class="btn btn-primary">Post</a>
+                                                    </div>
+                                                    <div class="profile-uoloaded-post border-bottom-1 pb-5">
+                                                        <img src="images/profile/8.jpg" alt="" class="img-fluid">
+                                                        <a class="post-title" href="javascript:void()">
+                                                            <h4>In the world of gears and circuits, every engineer is a creator. Today's masterpiece: a seamless blend of innovation and precision. </h4>
+                                                        </a>
+                                                        <p>the evolution of an idea into a fully functional marvel. From concept sketches to the final product, the journey of engineering is a testament to human ingenuity. 💡🔍 #EngineeringMarvels #InnovationNation</p>
+                                                        <button class="btn btn-primary mr-3"><span class="mr-3"><i class="fa fa-heart"></i></span>Like</button>
+                                                        <button class="btn btn-secondary"><span class="mr-3"><i class="fa fa-reply"></i></span>Reply</button>
+                                                    </div>
+                                                    <div class="profile-uoloaded-post border-bottom-1 pb-5">
+                                                        <img src="images/profile/9.jpg" alt="" class="img-fluid">
+                                                        <a class="post-title" href="javascript:void()">
+                                                            <h4>Turning dreams into blueprints, one design at a time. Behind every structure lies the passion of an engineer.</h4>
+                                                        </a>
+                                                        <p>Dive into the world of structural engineering, where every line drawn is a promise of strength and durability. Today's highlight: the fusion of aesthetics and functionality in our latest architectural triumph. 🌆🔨</p>
+                                                        <button class="btn btn-primary mr-3"><span class="mr-3"><i class="fa fa-heart"></i></span>Like</button>
+                                                        <button class="btn btn-secondary"><span class="mr-3"><i class="fa fa-reply"></i></span>Reply</button>
+                                                    </div>
+                                                    <div class="profile-uoloaded-post pb-5">
+                                                        <img src="images/profile/8.jpg" alt="" class="img-fluid">
+                                                        <a class="post-title" href="javascript:void()">
+                                                            <h4>Coding the future, one line at a time. Embracing the beauty of algorithms and the power of logical thinking.</h4>
+                                                        </a>
+                                                        <p>oin us on a journey through lines of code that breathe life into applications. From debugging challenges to optimizing performance, our engineers are the unsung heroes of the digital realm. 👩‍💻👨‍💻</p>
+                                                        <button class="btn btn-primary mr-3"><span class="mr-3"><i class="fa fa-heart"></i></span>Like</button>
+                                                        <button class="btn btn-secondary"><span class="mr-3"><i class="fa fa-reply"></i></span>Reply</button>
+                                                    </div>
+                                                    <div class="text-center mb-2"><a href="javascript:void()" class="btn btn-primary">Load More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+				
+            </div>
+        </div>
+       
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright ©  Developed by <a href="../index.htm" target="_blank">Web Weavers</a> 2024</p>
+            </div>
+        </div>
+       
+
+
+    </div>
+   
+    <script src="vendor/global/global.min.js"></script>
+	<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script src="js/dlabnav-init.js"></script>	
+
+    <script src="vendor/svganimation/vivus.min.js"></script>
+    <script src="vendor/svganimation/svg.animation.js"></script>
+    <script src="js/styleSwitcher.js"></script>
+   
+
+
+</body>
+</html>

@@ -1,0 +1,667 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        .custom-background {
+            background-color: rgb(79, 79, 193) !important;
+        }
+    </style>
+    
+    <title>Study Sphere</title>
+ 
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+  
+    	<link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+ 
+
+    <div id="main-wrapper">
+
+        <div class="nav-header">
+            <a href="index.html" class="brand-logo">
+                <img class="logo-abbr" src="images/logo2.png" alt="">
+                <img class="logo-compact" src="images/study.jpg" alt="">
+                <img class="brand-title" src="images/study.jpg" alt="">
+            </a>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+       
+
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+                            <div class="search_bar dropdown">
+                                <span class="search_icon p-3 c-pointer" data-toggle="dropdown">
+                                    <i class="mdi mdi-magnify"></i>
+                                </span>
+                                <div class="dropdown-menu p-0 m-0">
+                                    <form>
+                                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="navbar-nav header-right">
+                            <li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link bell ai-icon" href="#" role="button" data-toggle="dropdown">
+                                    <svg id="icon-user" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
+										<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+										<path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+									</svg>
+                                    <div class="pulse-css"></div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <ul class="list-unstyled">
+                                        <li class="media dropdown-item">
+                                            <span class="success"><i class="ti-user"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>z</strong> has added a <strong>course</strong> Successfully
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="primary"><i class="ti-shopping-cart"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>priya</strong> purchased completed course.</p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="danger"><i class="ti-bookmark"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>Robin</strong> joined<strong>class</strong> 
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="primary"><i class="ti-heart"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>David</strong>created a schedule</p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="success"><i class="ti-image"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong> sneha</strong> has<strong>new class</strong> 
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                    </ul>
+                                    <a class="all-notification" href="#">See all notifications <i class="ti-arrow-right"></i></a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown header-profile">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                    <img src="images/profile/education/pic1.jpg" width="20" alt="">
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="app-profile.html" class="dropdown-item ai-icon">
+                                        <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                        <span class="ml-2">Profile </span>
+                                    </a>
+                                    
+                                    <a href="page-login.html" class="dropdown-item ai-icon">
+                                        <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                                        <span class="ml-2">Logout </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+       
+        <div class="dlabnav">
+            <div class="dlabnav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label first">Main Menu</li>
+                    <li><a class="has-arrow" href="index.html" aria-expanded="false">
+							<i class="la la-home"></i>
+							<span class="nav-text">Dashboard</span>
+						</a>
+                        
+                    </li>
+                    <li><a class="ai-icon" href="app-profile.html" aria-expanded="false">
+                        <i class="la la-user"></i>
+                        <span class="nav-text">Profile</span>
+                    </a>
+                    <li><a class="ai-icon" href="page-register.html" aria-expanded="false">
+                        <i class="la la-th-list"></i>
+                        <span class="nav-text">Register</span>
+                    </a>
+                </li>
+                <li><a class="ai-icon" href="page-login.html" aria-expanded="false">
+                    <i class="la la-th-list"></i>
+                    <span class="nav-text">Log in</span>
+                </a>
+					<li><a class="ai-icon" href="event-management.html" aria-expanded="false">
+							<i class="la la-calendar"></i>
+							<span class="nav-text">Event Management</span>
+						</a>
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-user"></i>
+							<span class="nav-text">Professors</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="all-professors.html">All Professor</a></li>
+                            <li><a href="add-professor.html">Add Professor</a></li>
+                           
+                            <li><a href="professor-profile.html">Professor Profile</a></li>
+                        </ul>
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-users"></i>
+							<span class="nav-text">Students</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="all-students.html">All Students</a></li>
+                            <li><a href="add-student.html">Add Students</a></li>
+                       
+                            <li><a href="about-student.html">About Students</a></li>
+                        </ul>
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-graduation-cap"></i>
+							<span class="nav-text">Courses</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="all-courses.html">All Courses</a></li>
+                            <li><a href="add-courses.html">Add Courses</a></li>
+                           
+                            <li><a href="about-courses.html">About Courses</a></li>
+                        </ul>
+                    </li>
+					
+				
+							
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-laptop"></i>
+							<span class="nav-text">Virtual class</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="http://localhost:8080">chat</a></li>
+                            <li><a href="http://127.0.0.1:8082/06bd01fa-0a61-4a72-b816-32db59474a69">video streaming</a></li>
+                           
+                           
+                            <li><a href="holiday-calendar.html">Schedule</a></li>
+                        </ul>
+                    </li>
+					
+							
+							
+						</a>
+                        <ul aria-expanded="false">
+                           
+                        </ul>
+                    </li>			
+                    <li>
+                        <a class="has-arrow" href="form-element.html" aria-expanded="false">
+                            <i class="la la-file-text"></i>
+                            <span class="nav-text">Assessment</span>
+                        </a>
+
+                        <ul aria-expanded="false">
+                            <li><a href="form-element.html">Quiz</a></li>
+                        </ul>
+                        <ul aria-expanded="false">
+                            <li><a href="add-assessment.html">Add Assessment</a></li>
+                        </ul>
+                    </li>
+                    
+                </li>
+        </li>  <li><a class="has-arrow" href="https://adamowskya.my.canva.site/original-size-motivational-travel-instagram-reels-video" aria-expanded="false">
+            <i class="
+            la la-film"></i>
+            <span class="nav-text">ReelSpectra</span>
+        </a>
+        <li><a class="ai-icon" href="assignment.html" aria-expanded="false">
+            <i class="la la-edit"></i>
+            <span class="nav-text">Assignment</span>
+        </a>
+       
+               
+                            
+                        </ul>
+                    </li>
+				</ul>
+            </div>
+        </div>
+			
+
+        <!--Content body -->
+        <div class="content-body">
+           
+            <div class="container-fluid">
+			
+                <div class="row">
+					<div class="col-xl-3 col-xxl-3 col-sm-6">
+						<div class="widget-stat card bg-primary overflow-hidden">
+							<div class="card-header">
+								<h3 class="card-title text-white">Total Students</h3>
+								<h5 class="text-white mb-0"><i class="fa fa-caret-up"></i> 422</h5>
+							</div>
+							<div class="card-body text-center mt-3">
+								<div class="ico-sparkline">
+									<div id="sparkline12"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-xxl-3 col-sm-6">
+						<div class="widget-stat card bg-success overflow-hidden">
+							<div class="card-header">
+								<h3 class="card-title text-white">New Students</h3>
+								<h5 class="text-white mb-0"><i class="fa fa-caret-up"></i> 357</h5>
+							</div>
+							<div class="card-body text-center mt-4 p-0">
+								<div class="ico-sparkline">
+									<div id="spark-bar-2"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-xxl-3 col-sm-6">
+						<div class="widget-stat card bg-secondary overflow-hidden">
+							<div class="card-header pb-3">
+								<h3 class="card-title text-white">Total Course</h3>
+								<h5 class="text-white mb-0"><i class="fa fa-caret-up"></i> 547</h5>
+							</div>
+							<div class="card-body p-0 mt-2">
+								<div class="px-4"><span class="bar1" data-peity='{ "fill": ["rgb(0, 0, 128)", "rgb(7, 135, 234)"]}'>6,2,8,4,-3,8,1,-3,6,-5,9,2,-8,1,4,8,9,8,2,1</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-xxl-3 col-sm-6">
+						<div class="widget-stat card bg-danger overflow-hidden">
+							<div class="card-header pb-3">
+								<h3 class="card-title text-white">Assessment</h3>
+								<h5 class="text-white mb-0"><i class="fa fa-caret-up"></i>125</h5>
+							</div>
+							<div class="card-body p-0 mt-1">
+								<span class="peity-line-2" data-width="100%">7,6,8,7,3,8,3,3,6,5,9,2,8</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-6 col-xxl-6 col-sm-6">
+						<div class="card">
+						
+						</div>
+					</div>
+				
+					</div>
+					<div class="col-xl-8 col-xxl-8 col-lg-8 col-md-12 col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="card-title">Assign Task</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table header-border table-hover verticle-middle">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Task</th>
+                                                <th scope="col">Assigned Professors</th>
+                                                <th scope="col">Status</th>
+                                                <th scope="col">Progress</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>1</th>
+                                                <td>Machine Learning</td>
+                                                <td>Mahesh Kaulti</td>
+                                                <td><span class="badge badge-rounded badge-primary">DONE</span></td>
+                                                <td>
+                                                    <div class="progress">
+                                                        <div class="progress-bar" style="width: 70%;" role="progressbar">
+															<span class="sr-only">70% Complete</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>2</th>
+                                                <td>Data Structure</td>
+												<td>Bramesh S M</td>
+												<td><span class="badge badge-rounded badge-warning">Pending</span></td>
+                                                <td>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-warning" style="width: 70%;" role="progressbar">
+															<span class="sr-only">70% Complete</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>3</th>
+                                                <td>Operating System</td>
+												<td>Geethanjali</td>
+												<td><span class="badge badge-rounded badge-warning">Pending</span></td>
+                                                <td>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-warning" style="width: 70%;" role="progressbar">
+															<span class="sr-only">70% Complete</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>4</th>
+                                                <td>Database Management System</td>
+												<td>Puttaswamy</td>
+												<td><span class="badge badge-rounded badge-danger">Suspended</span></td>
+                                                <td>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-danger" style="width: 70%;" role="progressbar">
+															<span class="sr-only">70% Complete</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>5</th>
+                                                <td>Placement</td>
+												<td>Vinay</td>
+												<td><span class="badge badge-rounded badge-warning">Pending</span></td>
+                                                <td>
+                                                    <div class="progress">
+                                                        <div class="progress-bar bg-warning" style="width: 70%;" role="progressbar">
+															<span class="sr-only">70% Complete</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+											<tr>
+                                                <th>6</th>
+                                                <td>Innovation Design report</td>
+                                                <td>Rakshith</td>
+                                                <td><span class="badge badge-rounded badge-primary">DONE</span></td>
+                                                <td>
+                                                    <div class="progress">
+                                                        <div class="progress-bar" style="width: 70%;" role="progressbar">
+															<span class="sr-only">70% Complete</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="col-xl-4 col-xxl-4 col-lg-4 col-md-12 col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                            
+                                   
+											</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+						</div>
+					</div>
+					<div class="col-lg-12">
+                        <div class="card">
+							<div class="card-header">
+                                <h4 class="card-title">New Student List </h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-sm mb-0 table-striped">
+                                        <thead>
+                                            <tr>
+												<th class="px-5 py-3">Name</th>
+                                                <th class="py-3">Assigned Professor</th>
+                                                <th class="py-3">Branch</th>
+                                                <th class="py-3">Status</th>
+                                                <th class="py-3">Date Of Admit</th>
+                                                <th class="py-3">Edit</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="customers">
+                                            <tr class="btn-reveal-trigger">
+                                                <td class="p-3">
+                                                    <a href="javascript:void(0);">
+                                                        <div class="media d-flex align-items-center">
+                                                            <div class="avatar avatar-xl mr-2">
+                                                                <img class="rounded-circle img-fluid" src="images/avatar/5.png" width="30" alt="">
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h5 class="mb-0 fs--1">Mahesh</h5>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="py-2">Puttaswamy</td>
+                                                <td class="py-2">Mechanical</td>
+                                                <td><span class="badge badge-rounded badge-primary">DONE</span></td>
+                                                <td class="py-2">30/03/2023</td>
+                                                <td>
+                                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="btn-reveal-trigger">
+                                                <td class="p-3">
+                                                    <a href="javascript:void(0);">
+                                                        <div class="media d-flex align-items-center">
+                                                            <div class="avatar avatar-xl mr-2">
+                                                                <img class="rounded-circle img-fluid" src="images/avatar/1.png" alt="" width="30">
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h5 class="mb-0 fs--1">Nischith</h5>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="py-2">Sneha</td>
+                                                <td class="py-2">Computer</td>
+                                                <td><span class="badge badge-rounded badge-warning">Pending</span></td>
+                                                <td class="py-2">11/07/2023</td>
+                                                <td>
+                                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="btn-reveal-trigger">
+                                                <td class="p-3">
+                                                    <a href="javascript:void(0);">
+                                                        <div class="media d-flex align-items-center">
+                                                            <div class="avatar avatar-xl mr-2">
+                                                                <img class="rounded-circle img-fluid" src="images/avatar/5.png" width="30" alt="">
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h5 class="mb-0 fs--1">Siri</h5>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="py-2">Geethanjali</td>
+                                                <td class="py-2">Mechanical</td>
+                                                <td><span class="badge badge-rounded badge-primary">DONE</span></td>
+                                                <td class="py-2">05/04/2023</td>
+                                                <td>
+                                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="btn-reveal-trigger">
+                                                <td class="p-3">
+                                                    <a href="javascript:void(0);">
+                                                        <div class="media d-flex align-items-center">
+                                                            <div class="avatar avatar-xl mr-2">
+                                                                <img class="rounded-circle img-fluid" src="images/avatar/1.png" alt="" width="30">
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h5 class="mb-0 fs--1">Antony </h5>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="py-2">harshith</td>
+                                                <td class="py-2">Computer </td>
+                                                <td><span class="badge badge-rounded badge-danger">Suspended</span></td>
+                                                <td class="py-2">05/04/2023</td>
+                                                <td>
+                                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="btn-reveal-trigger">
+                                                <td class="p-3">
+                                                    <a href="javascript:void(0);">
+                                                        <div class="media d-flex align-items-center">
+                                                            <div class="avatar avatar-xl mr-2">
+                                                                <img class="rounded-circle img-fluid" src="images/avatar/1.png" alt="" width="30">
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h5 class="mb-0 fs--1">Jennifer </h5>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="py-2">Mahesh Kaluti</td>
+                                                <td class="py-2">ISE</td>
+                                                <td><span class="badge badge-rounded badge-warning">Pending</span></td>
+                                                <td class="py-2">17/03/2023</td>
+                                                <td>
+                                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="btn-reveal-trigger">
+                                                <td class="p-3">
+                                                    <a href="javascript:void(0);">
+                                                        <div class="media d-flex align-items-center">
+                                                            <div class="avatar avatar-xl mr-2">
+                                                                <img class="rounded-circle img-fluid" src="images/avatar/5.png" width="30" alt="">
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h5 class="mb-0 fs--1">Priya</h5>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="py-2">Puttaswamy</td>
+                                                <td class="py-2">Computer</td>
+                                                <td><span class="badge badge-rounded badge-danger">Suspended</span></td>
+                                                <td class="py-2">12/07/2023</td>
+                                                <td>
+                                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr class="btn-reveal-trigger">
+                                                <td class="p-3">
+                                                    <a href="javascript:void(0);">
+                                                        <div class="media d-flex align-items-center">
+                                                            <div class="avatar avatar-xl mr-2">
+                                                                <img class="rounded-circle img-fluid" src="images/avatar/1.png" alt="" width="30">
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <h5 class="mb-0 fs--1">Kanya</h5>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="py-2">Geethanjali</td>
+                                                <td class="py-2">ISE</td>
+                                                <td><span class="badge badge-rounded badge-warning">Pending</span></td>
+                                                <td class="py-2">15/06/2023</td>
+                                                <td>
+                                                    <a href="edit-student.html" class="btn btn-sm btn-primary"><i class="la la-pencil"></i></a>
+                                                    <a href="javascript:void(0);" class="btn btn-sm btn-danger"><i class="la la-trash-o"></i></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+            </div>
+        </div>
+        <!--Content body end-->
+
+
+        <!-- Footer start-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright ©  Developed by <a href="../index.htm" target="_blank">Web Weavers</a> 2024</p>
+            </div>
+        </div>
+        <!--Footer end-->
+
+		
+
+
+ 
+<script src="vendor/global/global.min.js"></script>
+	<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="js/custom.min.js"></script>
+	<script src="js/dlabnav-init.js"></script>
+
+    <script src="vendor/chart.js/Chart.bundle.min.js"></script>
+	
+    <script src="vendor/peity/jquery.peity.min.js"></script>
+
+    <script src="vendor/jquery-sparkline/jquery.sparkline.min.js"></script>
+	
+    <script src="js/dashboard/dashboard-3.js"></script>
+	
+
+	
+
+        <script src="vendor/svganimation/vivus.min.js"></script>
+        <script src="vendor/svganimation/svg.animation.js"></script>
+        <script src="js/styleSwitcher.js"></script>
+	
+</body>
+</html>

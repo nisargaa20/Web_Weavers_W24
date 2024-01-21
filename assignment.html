@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Study Sphere </title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <link rel="stylesheet" href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <a href="index.html" class="brand-logo">
+                <img class="logo-abbr" src="images/logo2.png" alt="">
+                <img class="logo-compact" src="images/study.jpg" alt="">
+                <img class="brand-title" src="images/study.jpg" alt="">
+            </a>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+                            <div class="search_bar dropdown">
+                                <span class="search_icon p-3 c-pointer" data-toggle="dropdown">
+                                    <i class="mdi mdi-magnify"></i>
+                                </span>
+                                <div class="dropdown-menu p-0 m-0">
+                                    <form>
+                                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="navbar-nav header-right">
+                            <li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link bell ai-icon" href="#" role="button" data-toggle="dropdown">
+                                    <svg id="icon-user" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
+										<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+										<path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+									</svg>
+                                    <div class="pulse-css"></div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <ul class="list-unstyled">
+                                        <li class="media dropdown-item">
+                                            <span class="success"><i class="ti-user"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>z</strong> has added a <strong>course</strong> Successfully
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="primary"><i class="ti-shopping-cart"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>priya</strong> purchased completed course.</p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="danger"><i class="ti-bookmark"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>Robin</strong> joined<strong>class</strong> 
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="primary"><i class="ti-heart"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>David</strong>created a schedule</p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="success"><i class="ti-image"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong> sneha</strong> has<strong>new class</strong> 
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                    </ul>
+                                    <a class="all-notification" href="#">See all notifications <i class="ti-arrow-right"></i></a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown header-profile">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                    <img src="images/profile/education/pic1.jpg" width="20" alt="">
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="app-profile.html" class="dropdown-item ai-icon">
+                                        <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                        <span class="ml-2">Profile </span>
+                                    </a>
+                                    
+                                    <a href="page-login.html" class="dropdown-item ai-icon">
+                                        <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                                        <span class="ml-2">Logout </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="dlabnav">
+            <div class="dlabnav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label first">Main Menu</li>
+                    <li><a class="has-arrow" href="index.html" aria-expanded="false">
+							<i class="la la-home"></i>
+							<span class="nav-text">Dashboard</span>
+						</a>
+                        
+                    </li>
+                    <li><a class="ai-icon" href="app-profile.html" aria-expanded="false">
+                        <i class="la la-user"></i>
+                        <span class="nav-text">Profile</span>
+                    </a>
+                    <li><a class="ai-icon" href="page-register.html" aria-expanded="false">
+                        <i class="la la-th-list"></i>
+                        <span class="nav-text">Register</span>
+                    </a>
+                </li>
+                <li><a class="ai-icon" href="page-login.html" aria-expanded="false">
+                    <i class="la la-th-list"></i>
+                    <span class="nav-text">Log in</span>
+                </a>
+					<li><a class="ai-icon" href="event-management.html" aria-expanded="false">
+							<i class="la la-calendar"></i>
+							<span class="nav-text">Event Management</span>
+						</a>
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-user"></i>
+							<span class="nav-text">Professors</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="all-professors.html">All Professor</a></li>
+                            <li><a href="add-professor.html">Add Professor</a></li>
+                           
+                            <li><a href="professor-profile.html">Professor Profile</a></li>
+                        </ul>
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-users"></i>
+							<span class="nav-text">Students</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="all-students.html">All Students</a></li>
+                            <li><a href="add-student.html">Add Students</a></li>
+                       
+                            <li><a href="about-student.html">About Students</a></li>
+                        </ul>
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-graduation-cap"></i>
+							<span class="nav-text">Courses</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="all-courses.html">All Courses</a></li>
+                            <li><a href="add-courses.html">Add Courses</a></li>
+                           
+                            <li><a href="about-courses.html">About Courses</a></li>
+                        </ul>
+                    </li>
+					
+				
+							
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-laptop"></i>
+							<span class="nav-text">Virtual class</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="http://localhost:8080">chat</a></li>
+                            <li><a href="http://127.0.0.1:8082/06bd01fa-0a61-4a72-b816-32db59474a69">video streaming</a></li>
+                           
+                           
+                            <li><a href="holiday-calendar.html">Schedule</a></li>
+                        </ul>
+                    </li>
+					
+							
+							
+						</a>
+                        <ul aria-expanded="false">
+                           
+                        </ul>
+                    </li>			
+                    <li>
+                        <a class="has-arrow" href="form-element.html" aria-expanded="false">
+                            <i class="la la-file-text"></i>
+                            <span class="nav-text">Assessment</span>
+                        </a>
+
+                        <ul aria-expanded="false">
+                            <li><a href="form-element.html">Quiz</a></li>
+                        </ul>
+                        <ul aria-expanded="false">
+                            <li><a href="add-assessment.html">Add Assessment</a></li>
+                        </ul>
+                    </li>
+                    
+                </li>
+        </li>  <li><a class="has-arrow" href="https://adamowskya.my.canva.site/motivational-travel-instagram-reels-video" aria-expanded="false">
+            <i class="
+            la la-film"></i>
+            <span class="nav-text">ReelSpectra</span>
+        </a>
+        <li><a class="ai-icon" href="assignment.html" aria-expanded="false">
+            <i class="la la-edit"></i>
+            <span class="nav-text">Assignment</span>
+        </a>
+       
+                            
+                        </ul>
+                    </li>
+				</ul>
+            </div>
+        </div>
+		
+		
+        <!--**********************************
+            Content body start
+        ***********************************-->
+    <!--**********************************
+    Content body start
+***********************************-->
+<div class="content-body">
+    <!-- Assignment Portal -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="col-sm-6 p-md-0">
+                        <div class="welcome-text">
+                            <h4>Assignment portal</h4>
+                        </div>
+                    </div>
+                    <form id="assignmentForm">
+                        <div class="form-group">
+                            <label for="assignmentTitle">Assignment Title</label>
+                            <input type="text" class="form-control" id="assignmentTitle" placeholder="Enter Assignment Title" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="assignmentDescription">Assignment Description</label>
+                            <textarea class="form-control" id="assignmentDescription" rows="3" placeholder="Enter Assignment Description" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="deadline">Deadline:</label>
+                            <input type="date" id="deadline">
+                        </div>
+    
+                        <button type="submit" class="btn btn-primary">Submit Assignment</button>
+                        <button type="button" class="btn btn-primary" onclick="sortAssignments('deadline')">Sort by Deadline</button>
+    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Assignment List -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Assignment List</h4>
+    
+                    <ul id="assignmentList" class="list-group">
+                        <!-- List items will be dynamically added here -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Add the following script at the end of your HTML file, before the closing </body> tag -->
+    <script>
+        window.addEventListener('load', () => {
+            const storedAssignments = JSON.parse(localStorage.getItem('assignments')) || [];
+            assignments.push(...storedAssignments);
+            displayAssignments();
+        });
+    
+        const assignmentsContainer = document.getElementById("assignmentList");
+        const assignments = JSON.parse(localStorage.getItem('assignments')) || [];
+    
+        function displayAssignments() {
+            assignmentsContainer.innerHTML = "";
+            assignments.forEach((assignment, index) => {
+                const assignmentItem = document.createElement("li");
+                assignmentItem.classList.add("list-group-item");
+    
+                const dateOptions = {
+                    year: "numeric",
+                    month: "short",
+                    day: "numeric",
+                    hour: "2-digit",
+                    minute: "2-digit"
+                };
+                const formattedDeadline = new Date(assignment.deadline).toLocaleDateString("en-US", dateOptions);
+    
+                assignmentItem.innerHTML = `
+                    <div class="d-flex justify-content-between">
+                        <h6 class="mb-0">${assignment.title}</h6>
+                        <small>Deadline: ${formattedDeadline}</small>
+                    </div>
+                    <p class="mb-1">${assignment.description}</p>
+                    <span>Deadline: ${assignment.deadline}</span>
+                    <button type="button" class="btn btn-primary" onclick="deleteAssignment(${index})">Delete Assignment</button>
+                    <!-- Add more details or actions as needed -->
+                `;
+    
+                assignmentsContainer.appendChild(assignmentItem);
+            });
+        }
+    
+        function addAssignment() {
+            const title = document.getElementById("assignmentTitle").value.trim();
+            const description = document.getElementById("assignmentDescription").value.trim();
+            const deadline = document.getElementById("deadline").value;
+    
+            if (title && description && isValidDate(deadline)) {
+                assignments.push({
+                    title,
+                    description,
+                    deadline
+                });
+                saveAssignments();
+                displayAssignments();
+                document.getElementById("assignmentTitle").value = "";
+                document.getElementById("assignmentDescription").value = "";
+                document.getElementById("deadline").value = "";
+            } else {
+                alert("Please fill in all fields correctly.");
+            }
+        }
+    
+        function isValidDate(dateString) {
+            const regex = /^\d{4}-\d{2}-\d{2}$/;
+            return regex.test(dateString);
+        }
+    
+        function saveAssignments() {
+            localStorage.setItem('assignments', JSON.stringify(assignments));
+        }
+    
+        function deleteAssignment(index) {
+            if (confirm("Are you sure you want to delete this assignment?")) {
+                assignments.splice(index, 1);
+                displayAssignments();
+                saveAssignments(); // Save to local storage after deletion
+            }
+        }
+    
+        function sortAssignments(criteria) {
+            // Implement sorting logic based on the chosen criteria
+            switch (criteria) {
+                case 'deadline':
+                    assignments.sort((a, b) => {
+                        const deadlineA = new Date(a.deadline);
+                        const deadlineB = new Date(b.deadline);
+                        return deadlineA - deadlineB;
+                    });
+                    break;
+                default:
+                    // Default sorting (e.g., by deadline)
+                    assignments.sort((a, b) => {
+                        const deadlineA = new Date(a.deadline);
+                        const deadlineB = new Date(b.deadline);
+                        return deadlineA - deadlineB;
+                    });
+                    break;
+            }
+    
+            displayAssignments();
+        }
+    
+        document.getElementById("assignmentForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            addAssignment();
+        });
+    
+        // Initial display
+        displayAssignments();
+    </script>
+
+
+
+
+
+<div class="footer">
+    <div class="copyright">
+        <p>Copyright © Developed by <a href="../index.htm" target="_blank">Web Weavers</a> 2024</p>
+    </div>
+</div>
+
+
+</div>
+
+<script src="vendor/global/global.min.js"></script>
+<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<script src="js/custom.min.js"></script>
+<script src="js/dlabnav-init.js"></script>	
+
+
+<script src="vendor/svganimation/vivus.min.js"></script>
+<script src="vendor/svganimation/svg.animation.js"></script>
+<script src="js/styleSwitcher.js"></script>
+
+
+
+
+</body>
+</html>

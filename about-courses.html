@@ -1,0 +1,439 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Study Sphere</title>
+  
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <link rel="stylesheet" href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+  
+
+    
+    <div id="main-wrapper">
+
+  
+        <div class="nav-header">
+            <a href="index.html" class="brand-logo">
+                <img class="logo-abbr" src="images/logo2.png" alt="">
+                <img class="logo-compact" src="images/study.jpg" alt="">
+                <img class="brand-title" src="images/study.jpg" alt="">
+            </a>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+    
+
+       
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+                            <div class="search_bar dropdown">
+                                <span class="search_icon p-3 c-pointer" data-toggle="dropdown">
+                                    <i class="mdi mdi-magnify"></i>
+                                </span>
+                                <div class="dropdown-menu p-0 m-0">
+                                    <form>
+                                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="navbar-nav header-right">
+                            <li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link bell ai-icon" href="#" role="button" data-toggle="dropdown">
+                                    <svg id="icon-user" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
+										<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+										<path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+									</svg>
+                                    <div class="pulse-css"></div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <ul class="list-unstyled">
+                                        <li class="media dropdown-item">
+                                            <span class="success"><i class="ti-user"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>z</strong> has added a <strong>course</strong> Successfully
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="primary"><i class="ti-shopping-cart"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>priya</strong> purchased completed course.</p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="danger"><i class="ti-bookmark"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>Robin</strong> joined<strong>class</strong> 
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="primary"><i class="ti-heart"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>David</strong>created a schedule</p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="success"><i class="ti-image"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong> sneha</strong> has<strong>new class</strong> 
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                    </ul>
+                                    <a class="all-notification" href="#">See all notifications <i class="ti-arrow-right"></i></a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown header-profile">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                    <img src="images/profile/education/pic1.jpg" width="20" alt="">
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="app-profile.html" class="dropdown-item ai-icon">
+                                        <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                        <span class="ml-2">Profile </span>
+                                    </a>
+                                    
+                                    <a href="page-login.html" class="dropdown-item ai-icon">
+                                        <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                                        <span class="ml-2">Logout </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+  
+        <div class="dlabnav">
+            <div class="dlabnav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label first">Main Menu</li>
+                    <li><a class="has-arrow" href="index.html" aria-expanded="false">
+							<i class="la la-home"></i>
+							<span class="nav-text">Dashboard</span>
+						</a>
+                        
+                    </li>
+                    <li><a class="ai-icon" href="app-profile.html" aria-expanded="false">
+                        <i class="la la-user"></i>
+                        <span class="nav-text">Profile</span>
+                    </a>
+                    <li><a class="ai-icon" href="page-register.html" aria-expanded="false">
+                        <i class="la la-th-list"></i>
+                        <span class="nav-text">Register</span>
+                    </a>
+                </li>
+                <li><a class="ai-icon" href="page-login.html" aria-expanded="false">
+                    <i class="la la-th-list"></i>
+                    <span class="nav-text">Log in</span>
+                </a>
+					<li><a class="ai-icon" href="event-management.html" aria-expanded="false">
+							<i class="la la-calendar"></i>
+							<span class="nav-text">Event Management</span>
+						</a>
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-user"></i>
+							<span class="nav-text">Professors</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="all-professors.html">All Professor</a></li>
+                            <li><a href="add-professor.html">Add Professor</a></li>
+                           
+                            <li><a href="professor-profile.html">Professor Profile</a></li>
+                        </ul>
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-users"></i>
+							<span class="nav-text">Students</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="all-students.html">All Students</a></li>
+                            <li><a href="add-student.html">Add Students</a></li>
+                       
+                            <li><a href="about-student.html">About Students</a></li>
+                        </ul>
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-graduation-cap"></i>
+							<span class="nav-text">Courses</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="all-courses.html">All Courses</a></li>
+                            <li><a href="add-courses.html">Add Courses</a></li>
+                           
+                            <li><a href="about-courses.html">About Courses</a></li>
+                        </ul>
+                    </li>
+					
+				
+							
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-laptop"></i>
+							<span class="nav-text">Virtual class</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="http://localhost:8080">chat</a></li>
+                            <li><a href="http://127.0.0.1:8082/06bd01fa-0a61-4a72-b816-32db59474a69">video streaming</a></li>
+                           
+                            <li><a href="holiday-calendar.html">Schedule</a></li>
+                        </ul>
+                    </li>
+					
+						</a>
+                        <ul aria-expanded="false">
+                           
+                        </ul>
+                    </li>		
+                    
+                    
+                    <li>
+                        <a class="has-arrow" href="form-element.html" aria-expanded="false">
+                            <i class="la la-file-text"></i>
+                            <span class="nav-text">Assessment</span>
+                        </a>
+
+                        <ul aria-expanded="false">
+                            <li><a href="form-element.html">Quiz</a></li>
+                        </ul>
+                        <ul aria-expanded="false">
+                            <li><a href="add-assessment.html">Add Assessment</a></li>
+                        </ul>
+                    </li>
+                    
+                </li>
+        </li>  <li><a class="has-arrow" href="https://adamowskya.my.canva.site/motivational-travel-instagram-reels-video" aria-expanded="false">
+            <i class="
+            la la-film"></i>
+            <span class="nav-text">ReelSpectra</span>
+        </a>
+        <li><a class="ai-icon" href="assignment.html" aria-expanded="false">
+            <i class="la la-edit"></i>
+            <span class="nav-text">Assignment</span>
+        </a>
+        					
+									
+						
+                 
+                    
+                        
+                    </li>
+               
+                            
+                        </ul>
+                    </li>
+				</ul>
+            </div>
+        </div>
+  
+        <div class="content-body">
+          
+            <div class="container-fluid">
+				    
+                <div class="row page-titles mx-0">
+                    <div class="col-sm-6 p-md-0">
+                        <div class="welcome-text">
+                            <h4>Course Details</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active"><a href="javascript:void(0);">Courses</a></li>
+                            <li class="breadcrumb-item active"><a href="javascript:void(0);">Course Details</a></li>
+                        </ol>
+                    </div>
+                </div>
+				
+				<div class="row">
+					<div class="col-xl-3 col-xxl-4 col-lg-4">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="card">
+									<img class="img-fluid" src="images/courses/pic1.jpg" alt="">
+									<div class="card-body">
+										<h4 class="mb-0">Frontend Development</h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-12">
+								<div class="card">
+									<div class="card-header">
+										<h2 class="card-title">About Course</h2>
+									</div>
+									<div class="card-body pb-0">
+										<p>Front-end development involves creating the visual part of a website or web application that users interact with.</p>
+										<ul class="list-group list-group-flush">
+											<li class="list-group-item d-flex px-0 justify-content-between">
+												<strong>Duration</strong>
+												<span class="mb-0">3 Year</span>
+											</li>
+											<li class="list-group-item d-flex px-0 justify-content-between">
+												<strong>Professor</strong>
+												<span class="mb-0">Padma Guru</span>
+											</li>
+											<li class="list-group-item d-flex px-0 justify-content-between">
+												<strong>Price</strong>
+												<span class="mb-0">500rs</span>
+											</li>
+											<li class="list-group-item d-flex px-0 justify-content-between">
+												<strong>Date</strong>
+												<span class="mb-0">Jan 2024</span>
+											</li>
+										</ul>
+									</div>
+									<div class="card-footer pt-0 pb-0 text-center">
+										<div class="row">
+											<div class="col-4 pt-3 pb-3 border-right">
+												<h3 class="mb-1 text-primary">07</h3>
+												<span>Years</span>
+											</div>
+											<div class="col-4 pt-3 pb-3 border-right">
+												<h3 class="mb-1 text-primary">240</h3>
+												<span>Students</span>
+											</div>
+											<div class="col-4 pt-3 pb-3">
+												<h3 class="mb-1 text-primary">05</h3>
+												<span>Batches</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-9 col-xxl-8 col-lg-8">
+						<div class="card">
+							<div class="card-body">
+								HTML (HyperText Markup Language):
+Description: The standard markup language for creating web pages.
+<br><br>
+Key Concepts:
+Structure: Learn about HTML elements, tags, and document structure.
+Semantic Markup: Use semantic HTML tags to give meaning to content.
+<br><br>
+CSS (Cascading Style Sheets):
+Description: A style sheet language used for describing the look and formatting of a document written in HTML.<br><br>
+Key Concepts:
+Selectors: Understand how to target HTML elements for styling.
+Layout: Explore different layout techniques like Flexbox and Grid.
+Responsive Design: Make your designs responsive to various screen sizes.<br><br>
+JavaScript:
+Description: A programming language that enables you to interact with and manipulate web page content.<br><br>
+Key Concepts:
+Variables and Data Types: Understand how to store and manipulate data.
+Functions: Learn to write reusable code blocks.<br><br>
+DOM Manipulation: Dynamically change the content and structure of a web page.<br><br>
+
+
+								<h4 class="text-primary">Our Courses</h4>
+								<div class="profile-skills pt-2 border-bottom-1 pb-2">
+									<a href="javascript:void()" class="btn btn-outline-dark btn-rounded px-4 my-3 my-sm-0 mr-3 m-b-10">Computer</a>
+									<a href="javascript:void()" class="btn btn-outline-dark btn-rounded px-4 my-3 my-sm-0 mr-3 m-b-10">Programming</a>
+									<a href="javascript:void()" class="btn btn-outline-dark btn-rounded px-4 my-3 my-sm-0 mr-3 m-b-10">Backend</a>
+									<a href="javascript:void()" class="btn btn-outline-dark btn-rounded px-4 my-3 my-sm-0 mr-3 m-b-10">Management</a>
+								</div>
+								<div class="profile-lang pt-5 border-bottom-1 pb-5">
+									
+								<h4 class="text-primary">Courses Information</h4>
+								<ul class="list-group mb-3 list-group-flush">
+									<li class="list-group-item border-0 px-0">Front-end developers create user interfaces (UI). UI is the graphical layout of an application that determines what each part of a site or application does and how it will look. "I've always found crafting polished user interactions that surprise and delight users to be the most rewarding and engaging task," says Mari Batilando, a software engineer at Meta. "In order to do this, you need to both have an eye for detail and a rock-solid understanding of the platform."</li>
+									<li class="list-group-item -0 px-0">If someone wanted to build a website, they might hire a front-end developer to create the site's layout. The front-end developer determines where to place images, what the navigation should look like, and how to present the site. Much of their work involves ensuring the appearance and layout of the site or application is easy to navigate and intuitive for the user.</li>
+									<li class="list-group-item -0 px-0">A career as a front-end web developer can flex your creativity and problem-solving skills. As a field that is constantly evolving to incorporate new technology, front-end development can reward those who like to learn new things and face challenges. The next few sections outline some of the most prominent skills for front-end developers.</li>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+             
+                <div class="row">
+                    <div class="card-body col-md-6">
+                        <h4 class="text-primary">Course related videos</h4>
+                        <iframe width="500" height="315" src="https://www.youtube.com/embed/zJSY8tbf_ys" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body col-md-6">
+                        <h4 class="text-primary"></h4>
+                        <iframe width="500" height="315" src="https://www.youtube.com/embed/7dSJubxFWv0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                
+                
+
+				
+            </div>
+        </div>
+
+      
+           
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright ©  Developed by <a href="../index.htm" target="_blank">Web Weavers</a> 2024</p>
+            </div>
+        </div>
+      
+
+
+    </div>
+
+ 
+    <script src="vendor/global/global.min.js"></script>
+	<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script src="js/dlabnav-init.js"></script>	
+
+
+    
+
+    <script src="vendor/svganimation/vivus.min.js"></script>
+    <script src="vendor/svganimation/svg.animation.js"></script>
+    <script src="js/styleSwitcher.js"></script>
+   
+	
+</body>
+</html>

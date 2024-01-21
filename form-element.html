@@ -1,0 +1,745 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        .custom-background {
+            background-color: rgb(79, 79, 193) !important;
+        }
+    </style>
+    
+    <title>Study Sphere</title>
+ 
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+  
+    	<link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+ 
+
+    <div id="main-wrapper">
+
+        <div class="nav-header">
+            <a href="index.html" class="brand-logo">
+                <img class="logo-abbr" src="images/logo2.png" alt="">
+                <img class="logo-compact" src="images/study.jpg" alt="">
+                <img class="brand-title" src="images/study.jpg" alt="">
+            </a>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+       
+
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+                            <div class="search_bar dropdown">
+                                <span class="search_icon p-3 c-pointer" data-toggle="dropdown">
+                                    <i class="mdi mdi-magnify"></i>
+                                </span>
+                                <div class="dropdown-menu p-0 m-0">
+                                    <form>
+                                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="navbar-nav header-right">
+                            <li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link bell ai-icon" href="#" role="button" data-toggle="dropdown">
+                                    <svg id="icon-user" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
+										<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+										<path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+									</svg>
+                                    <div class="pulse-css"></div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <ul class="list-unstyled">
+                                        <li class="media dropdown-item">
+                                            <span class="success"><i class="ti-user"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>z</strong> has added a <strong>course</strong> Successfully
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="primary"><i class="ti-shopping-cart"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>priya</strong> purchased completed course.</p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="danger"><i class="ti-bookmark"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>Robin</strong> joined<strong>class</strong> 
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="primary"><i class="ti-heart"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>David</strong>created a schedule</p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="success"><i class="ti-image"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong> sneha</strong> has<strong>new class</strong> 
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                    </ul>
+                                    <a class="all-notification" href="#">See all notifications <i class="ti-arrow-right"></i></a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown header-profile">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                    <img src="images/profile/education/pic1.jpg" width="20" alt="">
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="app-profile.html" class="dropdown-item ai-icon">
+                                        <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                        <span class="ml-2">Profile </span>
+                                    </a>
+                                    
+                                    <a href="page-login.html" class="dropdown-item ai-icon">
+                                        <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                                        <span class="ml-2">Logout </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+       
+        <div class="dlabnav">
+            <div class="dlabnav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label first">Main Menu</li>
+                    <li><a class="has-arrow" href="index.html" aria-expanded="false">
+							<i class="la la-home"></i>
+							<span class="nav-text">Dashboard</span>
+						</a>
+                        
+                    </li>
+                    <li><a class="ai-icon" href="app-profile.html" aria-expanded="false">
+                        <i class="la la-user"></i>
+                        <span class="nav-text">Profile</span>
+                    </a>
+                    <li><a class="ai-icon" href="page-register.html" aria-expanded="false">
+                        <i class="la la-th-list"></i>
+                        <span class="nav-text">Register</span>
+                    </a>
+                </li>
+                <li><a class="ai-icon" href="page-login.html" aria-expanded="false">
+                    <i class="la la-th-list"></i>
+                    <span class="nav-text">Log in</span>
+                </a>
+					<li><a class="ai-icon" href="event-management.html" aria-expanded="false">
+							<i class="la la-calendar"></i>
+							<span class="nav-text">Event Management</span>
+						</a>
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-user"></i>
+							<span class="nav-text">Professors</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="all-professors.html">All Professor</a></li>
+                            <li><a href="add-professor.html">Add Professor</a></li>
+                           
+                            <li><a href="professor-profile.html">Professor Profile</a></li>
+                        </ul>
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-users"></i>
+							<span class="nav-text">Students</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="all-students.html">All Students</a></li>
+                            <li><a href="add-student.html">Add Students</a></li>
+                       
+                            <li><a href="about-student.html">About Students</a></li>
+                        </ul>
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-graduation-cap"></i>
+							<span class="nav-text">Courses</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="all-courses.html">All Courses</a></li>
+                            <li><a href="add-courses.html">Add Courses</a></li>
+                           
+                            <li><a href="about-courses.html">About Courses</a></li>
+                        </ul>
+                    </li>
+					
+				
+							
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-laptop"></i>
+							<span class="nav-text">Virtual class</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="http://localhost:8080">chat</a></li>
+                            <li><a href="http://127.0.0.1:8082/06bd01fa-0a61-4a72-b816-32db59474a69">video streaming</a></li>
+                          
+                           
+                            <li><a href="holiday-calendar.html">Schedule</a></li>
+                        </ul>
+                    </li>
+					
+							
+							
+						</a>
+                        <ul aria-expanded="false">
+                           
+                        </ul>
+                    </li>			
+                    <li>
+                        <a class="has-arrow" href="form-element.html" aria-expanded="false">
+                            <i class="la la-file-text"></i>
+                            <span class="nav-text">Assessment</span>
+                        </a>
+
+                        <ul aria-expanded="false">
+                            <li><a href="form-element.html">Quiz</a></li>
+                        </ul>
+                        <ul aria-expanded="false">
+                            <li><a href="add-assessment.html">Add Assessment</a></li>
+                        </ul>
+                    </li>
+                    
+                </li>
+        </li>  <li><a class="has-arrow" href="https://adamowskya.my.canva.site/motivational-travel-instagram-reels-video" aria-expanded="false">
+            <i class="
+            la la-film"></i>
+            <span class="nav-text">ReelSpectra</span>
+        </a>
+        <li><a class="ai-icon" href="assignment.html" aria-expanded="false">
+            <i class="la la-edit"></i>
+            <span class="nav-text">Assignment</span>
+        </a>
+       
+               
+                            
+                        </ul>
+                    </li>
+				</ul>
+            </div>
+        </div>
+      
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+            <div class="container-fluid">
+                <div class="row page-titles mx-0">
+                    <div class="col-sm-6 p-md-0">
+                        <div class="welcome-text">
+                            <h4>Take up Quiz</h4>
+                            <h5>Basics of C Programming Language</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Form</a></li>
+                            <li class="breadcrumb-item active"><a href="javascript:void(0)">Element</a></li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- row -->
+                
+					<!-- Existing question -->
+                    
+                    <div class="col-xl-8 col-xxl-8 col-lg-8">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">1. Identify the C compiler of UNIX.</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="basic-form" id="questionForm1">
+                                    <form>
+                                        <div class="form-group">
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="optradio1" value="GCC"> GCC
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="optradio1" value="CC"> CC
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="optradio1" value="Borland"> Borland
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- (similar changes for other questions) -->
+                    
+<div class="col-xl-14 col-xxl-14 col-lg-14">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">2. What is the built in library function to compare two strings?</h4>
+        </div>
+        <div class="card-body">
+            <div class="basic-form" id="questionForm2">
+                <form>
+                    <div class="form-group">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optradio2" value="string_cmp()"> string_cmp()
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optradio2" value="strcmp()"> strcmp()
+                            </label>
+                        </div>
+                        <div class="radio ">
+                            <label>
+                                <input type="radio" name="optradio2" value="str_compare()"> str_compare()
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="col-xl-14 col-xxl-14 col-lg-14">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">3.Which of the following is a logical OR operator?</h4>
+        </div>
+        <div class="card-body">
+            <div class="basic-form" id="questionForm3">
+                <form>
+                    <div class="form-group">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optradio3" value="&&"> &&
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optradio3" value=" ||"> ||
+                            </label>
+                        </div>
+                        <div class="radio ">
+                            <label>
+                                <input type="radio" name="optradio3" value="None of these"> None of these
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xl-14 col-xxl-14 col-lg-14">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">4.C language has been developed by?</h4>
+        </div>
+        <div class="card-body">
+            <div class="basic-form" id="questionForm4">
+                <form>
+                    <div class="form-group">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optradio4" value=" Ken Thompson"> Ken Thompson
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optradio4" value="Dennis Ritchie"> Dennis Ritchie
+                            </label>
+                        </div>
+                        <div class="radio ">
+                            <label>
+                                <input type="radio" name="optradio4" value="Martin Richards"> Martin Richards
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xl-14 col-xxl-14 col-lg-14">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">5. A C variable cannot start with?</h4>
+        </div>
+        <div class="card-body">
+            <div class="basic-form" id="questionForm5">
+                <form>
+                    <div class="form-group">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optradio5" value="A number">A number
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optradio5" value=" A special symbol other than underscore"> A special symbol other than underscore
+                            </label>
+                        </div>
+                        <div class="radio ">
+                            <label>
+                                <input type="radio" name="optradio5" value="Both"> Both
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xl-14 col-xxl-14 col-lg-14">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">6.Which of the following statements is wrong ?</h4>
+        </div>
+        <div class="card-body">
+            <div class="basic-form" id="questionForm6">
+                <form>
+                    <div class="form-group">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optradio6" value="Count+5=res;">Count+5=res;
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optradio6" value="Val='A' * 'B';"> Val='A' * 'B';
+                            </label>
+                        </div>
+                        <div class="radio ">
+                            <label>
+                                <input type="radio" name="optradio6" value=" INT=123;"> INT=123;
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xl-14 col-xxl-14 col-lg-14">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">7.The maximun value that an integer constant can have is?</h4>
+        </div>
+        <div class="card-body">
+            <div class="basic-form" id="questionForm7">
+                <form>
+                    <div class="form-group">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optradio7" value="32767">32767
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optradio7" value="1.7014e+38"> 
+                                1.7014e+38
+                            </label>
+                        </div>
+                        <div class="radio ">
+                            <label>
+                                <input type="radio" name="optradio7" value="456H"> 456H
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xl-14 col-xxl-14 col-lg-14">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">8.What statement can print \n on screen?</h4>
+        </div>
+        <div class="card-body">
+            <div class="basic-form" id="questionForm8">
+                <form>
+                    <div class="form-group">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optradio8" value='Printf("\n")'>Printf("\n")
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optradio8" value='Printf("n\")'> Printf("n\")
+                            </label>
+                        </div>
+                        <div class="radio ">
+                            <label>
+                                <input type="radio" name="optradio8" value='Print("\n")'> Print("\n")
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-xl-14 col-xxl-14 col-lg-14">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">
+                9.How is an array initialized in C language?</h4>
+        </div>
+        <div class="card-body">
+            <div class="basic-form" id="questionForm9">
+                <form>
+                    <div class="form-group">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optradio9" value="int arr[3]={1,2,3}">int arr[3]={1,2,3}
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optradio9" value="int arr()=[1,2,3]"> int arr()=[1,2,3]
+                            </label>
+                        </div>
+                        <div class="radio ">
+                            <label>
+                                <input type="radio" name="optradio9" value="int a[]=new int[]"> int a[]=new int[]
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>       
+<div class="col-xl-14 col-xxl-14 col-lg-14" style="background-color: rgb(128, 128, 172);">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">
+                10. What is the disadvantage of arrays in C?</h4>
+        </div>
+        <div class="card-body">
+            <div class="basic-form" id="questionForm10">
+                <form>
+                    <div class="form-group">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optradio10" value="The amount of memory to be allocated needs to be known beforehand."> The amount of memory to be allocated needs to be known beforehand.
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optradio10" value="Elements of an array can be accessed in constant time."> Elements of an array can be accessed in constant time.
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optradio10" value="Elements are stored in contiguous memory blocks."> Elements are stored in contiguous memory blocks.
+                            </label>
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-12">
+            <button type="button" class="btn btn-primary mb-2" id="checkButton">Check Answers</button>
+            <button type="button" class="btn btn-secondary mb-2" id="retryButton" style="display:none;">Retry Quiz</button>
+        </div>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                document.getElementById('checkButton').addEventListener('click', checkAnswers);
+                document.getElementById('retryButton').addEventListener('click', retryQuiz);
+            });
+        
+            function checkAnswers() {
+                var correctAnswers = [
+                    "GCC",
+                    "string_cmp()",
+                    "||",
+                    "Dennis Ritchie",
+                    "Both",
+                    "Count+5=res;",
+                    "32767",
+                    'Printf("\\n")',
+                    "int arr[3]={1,2,3}",
+                    "The amount of memory to be allocated needs to be known beforehand."
+                ];
+        
+                var correctCount = 0;
+                var allQuestionsAnswered = true;
+                var unansweredQuestions = [];
+        
+                // Loop through each question
+                for (var i = 1; i <= 10; i++) {
+                    var selectedAnswer = getSelectedAnswer(i);
+                    var questionContainer = document.getElementById('questionForm' + i);
+        
+                    if (!selectedAnswer) {
+                        allQuestionsAnswered = false;
+                        unansweredQuestions.push(i);
+                    } else {
+                        // Compare the selected answer with the correct answer
+                        var feedback = document.createElement('div');
+                        feedback.className = 'feedback';
+        
+                        if (selectedAnswer === correctAnswers[i - 1]) {
+                            correctCount++;
+                            feedback.innerHTML = 'Correct!';
+                            feedback.style.color = 'green';
+                        } else {
+                            feedback.innerHTML = 'Incorrect. Correct answer: ' + correctAnswers[i - 1];
+                            feedback.style.color = 'red';
+                        }
+        
+                        questionContainer.appendChild(feedback);
+                    }
+        
+                    
+                    var radioButtons = questionContainer.querySelectorAll('input[type="radio"]');
+                    radioButtons.forEach(function (radio) {
+                        radio.disabled = true;
+                    });
+                }
+        
+                
+                if (allQuestionsAnswered) {
+                    var scorePercentage = (correctCount / 10) * 100;
+                    alert('You got ' + correctCount + ' correct answers out of 10 questions. Score: ' + scorePercentage.toFixed(2) + '%');
+                    document.getElementById('retryButton').style.display = 'block';
+                } else {
+                    alert('Please select an option for questions: ' + unansweredQuestions.join(', '));
+                }
+            }
+        
+            function getSelectedAnswer(questionNumber) {
+                var selectedAnswer = document.querySelector('input[name="optradio' + questionNumber + '"]:checked');
+                return selectedAnswer ? selectedAnswer.value : null;
+            }
+        
+            function retryQuiz() {
+               
+                for (var i = 1; i <= 10; i++) {
+                    var questionContainer = document.getElementById('questionForm' + i);
+                    var radioButtons = questionContainer.querySelectorAll('input[type="radio"]');
+                    
+                    radioButtons.forEach(function (radio) {
+                        radio.disabled = false;
+                        radio.checked = false;
+                    });
+        
+                    var feedback = questionContainer.querySelector('.feedback');
+                    if (feedback) {
+                        feedback.remove();
+                    }
+                }
+        
+                document.getElementById('retryButton').style.display = 'none';
+            }
+        </script>
+
+
+
+
+
+<div class="col-12" >
+    <button type="submit" class="btn btn-primary mb-2" onclick="redirectToNextPage()">Next Level</button>
+</div>
+<script>
+  
+    function redirectToNextPage() {
+       
+        window.location.href = 'form-nextlevel.html';
+    }
+</script>
+
+                
+                          
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+        
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright ©  Developed by <a href="../index.htm" target="_blank">Web Weavers</a> 2024</p>
+            </div>
+        </div>
+      
+
+        
+    </div>
+   
+    <script src="vendor/global/global.min.js"></script>
+	<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script src="js/dlabnav-init.js"></script>
+    
+	
+    <script src="vendor/svganimation/vivus.min.js"></script>
+    <script src="vendor/svganimation/svg.animation.js"></script>
+    <script src="js/styleSwitcher.js"></script>
+</body>
+
+</html>
