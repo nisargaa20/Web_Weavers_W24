@@ -23,7 +23,7 @@ With StudySphere's diverse range of features, you can customize your learning ex
 
 ## Installation
 
-1. Clone the repository: git clone https://github.com/nisargaa20/Elearning_Platform.git
+1. Clone the repository: git clone https://github.com/nisargaa20/Web_Weavers_W24.git
 2. Install dependencies: npm install
 3. Start the development server: npm start
 
